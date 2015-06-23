@@ -1,4 +1,4 @@
 var gulp = require('gulp');
 var serve = require('gulp-serve');
 
-gulp.task('serve', serve('bin/Debug/AppX'));
+gulp.task('serve', serve('.'));
