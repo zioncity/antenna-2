@@ -85,6 +85,7 @@
     <Content Include="pages\ctrl\listview.js" />
     <Content Include="pages\lvscroll.html" />
     <Content Include="pages\lvscroll.js" />
+    <Content Include="README.md" />
     <None Include="antenna-2_dev.pfx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
