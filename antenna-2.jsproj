@@ -49,43 +49,43 @@
     <RequiredPlatformVersion>8.1</RequiredPlatformVersion>
     <MinimumVisualStudioVersion>$(VersionNumberMajor).$(VersionNumberMinor)</MinimumVisualStudioVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
-    <PackageCertificateKeyFile>antenna-2_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>antenna-2_dev.pfx</PackageCertificateKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
     <Content Include="default.html" />
+    <Content Include="fragments\page-toolbar.html" />
     <Content Include="images\logo.scale-100.png" />
     <Content Include="images\smalllogo.scale-100.png" />
     <Content Include="images\splashscreen.scale-100.png" />
     <Content Include="images\storelogo.scale-100.png" />
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
-    <Content Include="lvscroll.html" />
-    <Content Include="lvscroll.js" />
-    <Content Include="page-toolbar.html" />
-    <Content Include="toolbar.css" />
-    <Content Include="toolbar.html" />
-    <Content Include="toolbar.js" />
-    <Content Include="winjs\css\ui-dark.css" />
-    <Content Include="winjs\css\ui-dark.min.css" />
-    <Content Include="winjs\css\ui-light.css" />
-    <Content Include="winjs\css\ui-light.min.css" />
-    <Content Include="winjs\fonts\Symbols.ttf" />
-    <Content Include="winjs\js\base.js" />
-    <Content Include="winjs\js\base.min.js" />
-    <Content Include="winjs\js\base.min.js.map" />
-    <Content Include="winjs\js\en-US\ui.strings.js" />
-    <Content Include="winjs\js\ui.js" />
-    <Content Include="winjs\js\ui.min.js" />
-    <Content Include="winjs\js\ui.min.js.map" />
-    <Content Include="winjs\js\WinJS.intellisense-setup.js" />
-    <Content Include="winjs\js\WinJS.intellisense.js" />
-    <Content Include="winjs\License.txt" />
-    <Content Include="winjs\package.json" />
-    <Content Include="winjs\README.md" />
-    <None Include="antenna-2_TemporaryKey.pfx" />
+    <Content Include="node_modules\winjs\css\ui-dark.css" />
+    <Content Include="node_modules\winjs\css\ui-dark.min.css" />
+    <Content Include="node_modules\winjs\css\ui-light.css" />
+    <Content Include="node_modules\winjs\css\ui-light.min.css" />
+    <Content Include="node_modules\winjs\fonts\Symbols.ttf" />
+    <Content Include="node_modules\winjs\js\base.js" />
+    <Content Include="node_modules\winjs\js\base.min.js" />
+    <Content Include="node_modules\winjs\js\base.min.js.map" />
+    <Content Include="node_modules\winjs\js\en-US\ui.strings.js" />
+    <Content Include="node_modules\winjs\js\ui.js" />
+    <Content Include="node_modules\winjs\js\ui.min.js" />
+    <Content Include="node_modules\winjs\js\ui.min.js.map" />
+    <Content Include="node_modules\winjs\js\WinJS.intellisense-setup.js" />
+    <Content Include="node_modules\winjs\js\WinJS.intellisense.js" />
+    <Content Include="node_modules\winjs\License.txt" />
+    <Content Include="node_modules\winjs\package.json" />
+    <Content Include="node_modules\winjs\README.md" />
+    <Content Include="pages\ctrl\listview.css" />
+    <Content Include="pages\ctrl\listview.html" />
+    <Content Include="pages\ctrl\listview.js" />
+    <Content Include="pages\lvscroll.html" />
+    <Content Include="pages\lvscroll.js" />
+    <None Include="antenna-2_dev.pfx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <!-- To modify your build process, add your task inside one of the targets below then uncomment

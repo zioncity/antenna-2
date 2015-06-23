@@ -5,14 +5,14 @@
     <title>antenna_2</title>
 
     <!-- WinJS references -->
-    <link href="/winjs/css/ui-light.css" rel="stylesheet" />
-    <script src="/winjs/js/base.js"></script>
-    <script src="/winjs/js/ui.js"></script>
+    <link href="/node_modules/winjs/css/ui-light.css" rel="stylesheet" />
+    <script src="/node_modules/winjs/js/base.js"></script>
+    <script src="/node_modules/winjs/js/ui.js"></script>
 
     <!-- antenna_2 references -->
     <link href="/css/default.css" rel="stylesheet" />
     <script src="/js/default.js"></script>
-  <!--<script src="toolbar.js"></script>-->
+  <!--<script src="/pages/ctrl/listview.js"></script>-->
 </head>
 <body>
   <div id="app">
@@ -28,7 +28,8 @@
 
         <div class="nav-commands">
           <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Home', icon: 'home'}"></div>
-          <div id="buyButton" data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Favorite', icon: 'favorite'}"></div>
+          <div id="buyButton" data-win-control="WinJS.UI.NavBarCommand" 
+               data-win-options="{ label: 'Favorite', icon: 'favorite'}"></div>
           <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Settings', icon: 'settings'}"></div>
         </div>
       </div>
@@ -37,9 +38,8 @@
       <div class="contenttext">
         <h2 class="win-h2">SplitView Content area</h2>
         <div class="renderingPageControls-controlHost" >
-          <h2 class="win-h2">This control is rendered via a call to <span class="code">WinJS.UI.Pages.render</span>, passing the URI of the HTML to load.</h2>
+          <div class="renderingPageControls-renderedControl"></div>
         </div>
-        <div class="renderingPageControls-renderedControl"></div>
       </div>
     </div>
   </div>
