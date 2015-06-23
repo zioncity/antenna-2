@@ -23,14 +23,45 @@
           <button class="win-splitviewpanetoggle"
                   data-win-control="WinJS.UI.SplitViewPaneToggle"
                   data-win-options="{ splitView: select('.splitView') }"></button>
-          <div class="title">SplitView Pane area</div>
+          <div class="title">天线姿态监测管理</div>
         </div>
-
         <div class="nav-commands">
-          <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Home', icon: 'home'}"></div>
-          <div id="buyButton" data-win-control="WinJS.UI.NavBarCommand" 
-               data-win-options="{ label: 'Favorite', icon: 'favorite'}"></div>
-          <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Settings', icon: 'settings'}"></div>
+          <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '天线姿态监测设置', icon: '\uE1E9'}"></div>
+          <div data-win-control="WinJS.UI.NavBarCommand" 
+               data-win-options="{ label: '天线姿态查询', icon: '\uE11A'}"></div>
+          <div data-win-control="WinJS.UI.NavBarCommand"
+               data-win-options="{ label: '告警查询', icon: '\uE129'}"></div>
+          <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '即时上报', icon: '\uE115'}"></div>
+        </div>
+        <div class="zion-header">
+          <div class="zion-split-seperator"></div>
+          <div class="win-h4">监测子系统管理</div>
+        </div>
+        <div >
+          <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '添加监测子系统', icon: '\uE1C9'}"></div>
+          <div data-win-control="WinJS.UI.NavBarCommand"
+               data-win-options="{ label: '批量添加', icon: '\uE109'}"></div>
+          <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '监测子系统查询', icon: '\uE11A'}"></div>
+          <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '添加监测单元', icon: '\uE1C9'}"></div>
+          <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '批量添加监测单元', icon: '\uE109'}"></div>
+          <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '监测单元查询', icon: '\uE11A'}"></div>
+        </div>
+        <div class="zion-header">
+          <div class="zion-split-seperator"></div>
+          <div class="win-h4">用户权限管理</div>
+        </div>
+        <div>
+          <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '管理员密码', icon: '\uE125'}"></div>
+          <div id="buyButton" data-win-control="WinJS.UI.NavBarCommand"
+               data-win-options="{ label: '权限', icon: '\uE192'}"></div>
+        </div>
+        <div class="zion-header">
+          <div class="zion-split-seperator"></div>
+          <div class="win-h4">数据统计</div>
+        </div>
+        <div>
+          <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '网站日志', icon: '\uE160'}"></div>
+          <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '网站统计', icon: '\uE292'}"></div>
         </div>
       </div>
       <!-- Scenario Controls -->

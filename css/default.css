@@ -12,7 +12,11 @@ font-family: "Segoe UI", Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅�
   #app .header {
     white-space: nowrap;
   }
-
+  #app .zion-header {
+    white-space:nowrap;
+    margin-top:8px;
+    margin-bottom:8px;
+  }
   #app .title {
     font-size: 25px;
     left: 50px;
@@ -119,4 +123,9 @@ font-family: "Segoe UI", Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅�
     background-color: rgb(29, 29, 29);
     margin-bottom:5px;
     color: green;
+}
+div.zion-split-seperator {
+  float: left;
+  height: 32px;
+  width: 48px;
 }
