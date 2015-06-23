@@ -12,6 +12,7 @@
     <!-- antenna_2 references -->
     <link href="/css/default.css" rel="stylesheet" />
     <script src="/js/default.js"></script>
+  <!--<script src="toolbar.js"></script>-->
 </head>
 <body>
   <div id="app">
@@ -33,9 +34,22 @@
       </div>
 
       <!-- Content area -->
-      <div class="contenttext"><h2 class="win-h2">SplitView Content area</h2> </div>
+      <div class="contenttext">
+        <h2 class="win-h2">SplitView Content area</h2>
+        <div class="box">
+          <button class="win-button action" id="basicFragmentLoadButton">Load the fragment</button><br />
+          <div id="basicFragmentLoadDiv"></div>
+          <br />
+          <div id="status"></div>
+        </div>
+        <div id="statusMessage"></div>
+        <div class="renderingPageControls-controlHost">
+          <h2 class="win-h2">This control is rendered via a call to <span class="code">WinJS.UI.Pages.render</span>, passing the URI of the HTML to load.</h2>
+          <div class="renderingPageControls-renderedControl"></div>
+        </div>
+      </div>
     </div>
   </div>
-
+  <div class="status"></div>
 </body>
 </html>

@@ -1,4 +1,19 @@
-﻿// For an introduction to the Blank template, see the following documentation:
+﻿(function () {
+  "use strict";
+  WinJS.Namespace.define("Sample", {
+    outputCommand: WinJS.UI.eventHandler(function (ev) {
+      var status = document.querySelector(".status");
+      var command = ev.currentTarget;
+      if (command.winControl) {
+        var label = command.winControl.label || command.winControl.icon || "button";
+        var section = command.winControl.section || "";
+        var msg = section + " command " + label + " was pressed";
+        status.textContent = msg;
+      }
+    })
+  });
+})();
+// For an introduction to the Blank template, see the following documentation:
 // http://go.microsoft.com/fwlink/?LinkId=232509
 (function () {
     "use strict";
@@ -37,6 +52,37 @@
         WinJS.UI.processAll();
       };
     }
+    function basicFragmentLoad() {
+      resetOutput();
 
+      // Read fragment from the HTML file and load it into the div.  Note
+      // Fragments.renderCopy() returns a promise which a done() statement
+      // is attached to in order to perform additional processing or handle errors
+      // that may have occurred during the renderCopy() action.
+      WinJS.UI.Fragments.renderCopy("/page-toolbar.html", basicFragmentLoadDiv)
+          .done(
+              function () {
+                log("successfully loaded fragment", "sample", "status");
+              },
+              function (error) {
+                log("error loading fragment: " + error, "sample", "error");
+              }
+          );
+    }
+    function resetOutput() {
+      basicFragmentLoadDiv.innerHTML = "";
+    }
+
+    function log(msg) {
+      document.getElementById("status").innerHTML += msg + "<br/>";
+    };
+    app.addEventListener("ready", function () {
+      console.log("you should shee this");
+      var basicFragmentLoadDiv = document.querySelector("#basicFragmentLoadDiv");
+      WinJS.Utilities.query("#basicFragmentLoadButton", document).listen("click", basicFragmentLoad);
+
+      var renderHost = document.querySelector(".renderingPageControls-renderedControl");
+      WinJS.UI.Pages.render("/toolbar.html", renderHost).done();
+    }, false);
     app.start();
 })();
