@@ -74,9 +74,15 @@
     <Content Include="node_modules\winjs\License.txt" />
     <Content Include="node_modules\winjs\package.json" />
     <Content Include="node_modules\winjs\README.md" />
+    <Content Include="pages\antennasettings\antennasettings.css" />
+    <Content Include="pages\antennasettings\antennasettings.html" />
+    <Content Include="pages\antennasettings\antennasettings.js" />
     <Content Include="pages\ctrl\listview.css" />
     <Content Include="pages\ctrl\listview.html" />
     <Content Include="pages\ctrl\listview.js" />
+    <Content Include="pages\homepage\homepage.css" />
+    <Content Include="pages\homepage\homepage.html" />
+    <Content Include="pages\homepage\homepage.js" />
     <Content Include="pages\lvscroll.html" />
     <Content Include="pages\lvscroll.js" />
     <Content Include="README.md" />

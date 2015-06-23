@@ -26,7 +26,7 @@
           <div class="title">天线姿态监测管理</div>
         </div>
         <div class="nav-commands">
-          <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '天线姿态监测设置', icon: '\uE1E9'}"></div>
+          <div id="zion-antenna-settings" data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '天线姿态监测设置', icon: '\uE1E9', onclick:zion.antennaSettingsCommand}"></div>
           <div data-win-control="WinJS.UI.NavBarCommand" 
                data-win-options="{ label: '天线姿态查询', icon: '\uE11A'}"></div>
           <div data-win-control="WinJS.UI.NavBarCommand"
@@ -67,11 +67,23 @@
       <!-- Scenario Controls -->
       <!-- Content area -->
       <div class="contenttext">
-        <h2 class="win-h2">SplitView Content area</h2>
-        <div class="renderingPageControls-controlHost" >
+        <h2 class="win-h2">天线姿态自动监测管理系统</h2>
+<!--        <div class="renderingPageControls-controlHost">
           <div class="renderingPageControls-renderedControl"></div>
-        </div>
+        </div>-->
+
       </div>
+    </div>
+  </div>
+  <div class="zion-antenna-settings-host">
+    <div id="zion-antenna-settings-dialog" data-win-control="WinJS.UI.ContentDialog" data-win-options="{
+             title: 'Main instruction',
+             primaryCommandText: 'button1',
+             secondaryCommandText: 'button2'        }">
+      <div id="zion-antenna-settings-dialog-content"></div>
+      Use the content area to present additional information helpful to understanding or using the dialog.
+      You can use this area to provide more detail or define terminology. Don't repeat the main instruction
+      with slightly different wording.
     </div>
   </div>
 

@@ -1,6 +1,6 @@
 ﻿(function () {
   "use strict";
-  WinJS.Namespace.define("Sample", {
+  WinJS.Namespace.define("zion", {
     outputCommand: WinJS.UI.eventHandler(function (ev) {
       var status = document.querySelector(".status");
       var command = ev.currentTarget;
@@ -10,6 +10,16 @@
         var msg = section + " command " + label + " was pressed";
         status.textContent = msg;
       }
+    }),
+    antennaSettingsCommand: WinJS.UI.eventHandler(function (ev) {
+      var dia = document.querySelector("#zion-antenna-settings-dialog").winControl;
+      var cont = dia.element.querySelector("#zion-antenna-settings-dialog-content");
+      cont.innerHTML = "";
+      ///pages/antennasettings/antennasettings.html
+      WinJS.UI.Pages.render("/pages/antennasettings/antennasettings.html", cont).done(function () {
+        dia.show();
+      });
+
     })
   });
 })();
@@ -57,8 +67,7 @@
       });
 
       var renderHost = document.querySelector(".renderingPageControls-renderedControl");
-      WinJS.UI.Pages.render("/pages/ctrl/listview.html", renderHost).done(function () {
-      });
+//      WinJS.UI.Pages.render("/pages/ctrl/listview.html", renderHost).done(function () {      });
     }, false);
     app.start();
 })();
