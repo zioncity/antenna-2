@@ -1,9 +1,9 @@
 ﻿.toolbar section {
-	margin: auto 120px;
+	margin: auto 0px;
 }
 
 .phone .toolbar .page-section {
-	margin: auto 24px;
+	margin: auto 0px;
 }
 
 .phone .toolbar .page-header .titlearea {
@@ -22,13 +22,10 @@
 	-ms-grid-columns: 1fr;
 	-ms-grid-rows: 128px 1fr;
 	display: -ms-grid;
-	height: 100%;
-	width: 100%;
 }
 
 	.fragment section[role=main] {
 		-ms-grid-row: 2;
-		height: 100%;
 	}
   /* Template for the items in the ListViews in this sample */       
 .smallListIconTextItem
@@ -51,14 +48,14 @@
     }
 
     .smallListIconTextItem .smallListIconTextItem-Detail
-    {
-        margin: 5px;
+page-section    {
+        margin: 0px;
     }
 
 /* CSS applied to the ListViews in this sample */
-.listView
-{
-    height: 100%;
+.listView{
+  height:100%;
+  -ms-overflow-style:scrollbar;
 }
 
 /* Override the background color for even/odd win-containers */
@@ -68,4 +65,7 @@
 
 .listView .win-container.win-container-even {
     background-color: #444;
+}
+.win-viewport{
+    -ms-overflow-style: scrollbar;
 }

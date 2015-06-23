@@ -1,31 +1,29 @@
 ﻿body {
 font-family: "Segoe UI", Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 }
-.content,
-#app {
-    height: 100%;
+.content, #app {
+  height: 100%;
 }
+#app .win-splitviewpanetoggle {
+    float: left;
+  }
 
-    #app .win-splitviewpanetoggle {
-        float: left;
-    }
+  /* SplitView pane content style*/
+  #app .header {
+    white-space: nowrap;
+  }
 
-    /* SplitView pane content style*/
-    #app .header {
-        white-space: nowrap;
-    }
+  #app .title {
+    font-size: 25px;
+    left: 50px;
+    margin-top: 6px;
+    vertical-align: middle;
+    display: inline-block;
+  }
 
-    #app .title {
-        font-size: 25px;
-        left: 50px;
-        margin-top: 6px;
-        vertical-align: middle;
-        display: inline-block;
-    }
-
-    #app .nav-commands {
-        margin-top: 20px;
-    }
+  #app .nav-commands {
+    margin-top: 20px;
+  }
 
 .win-navbarcommand-button {
     background-color: transparent;
@@ -44,12 +42,14 @@ font-family: "Segoe UI", Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅�
 
 /*SplitView content style*/
 #app .win-splitview-content {
-    background-color: rgb(112,112,112);
+    background-color: rgb(252,252,252);
 }
 
 #app .contenttext {
     margin-left: 20px;
     margin-top: 6px;
+    height:100%;
+    overflow-y:scroll;
 }
 #content {
 	text-align: center;
@@ -90,9 +90,10 @@ font-family: "Segoe UI", Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅�
 /* CSS applied to the ListViews in this sample */
 .listView
 {
-    height: 100%;
 }
-
+.win-viewport{
+    -ms-overflow-style: scrollbar;
+}
 /* Override the background color for even/odd win-containers */
 .listView .win-container.win-container-odd {
     background-color: #777;

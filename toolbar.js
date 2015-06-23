@@ -16,7 +16,7 @@
     var items = [];
 
   // Generate 160 items
-    for (var i = 0; i < 20; i++) {
+    for (var i = 0; i < 16; i++) {
       itemArray.forEach(function (item) {
         items.push(item);
       });
@@ -44,6 +44,6 @@
         }
     });
     WinJS.Namespace.define("Sample", {
-      ToolBarControl : toolbar_ctor
+      ToolbarControl : toolbar_ctor
     });
 })();
