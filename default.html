@@ -40,7 +40,7 @@
         <div>
           <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '添加监测子系统', icon: '\uE1C9', onclick:zion.addEquipmentCommand}"></div>
           <div data-win-control="WinJS.UI.NavBarCommand"
-               data-win-options="{ label: '批量添加', icon: '\uE109'}"></div>
+               data-win-options="{ label: '批量添加', icon: '\uE109', onclick:zion.batchAddEquipCommand}"></div>
           <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '监测子系统查询', icon: '\uE11A'}"></div>
           <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '添加监测单元', icon: '\uE1C9'}"></div>
           <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '批量添加监测单元', icon: '\uE109'}"></div>
@@ -76,13 +76,14 @@
       </div>
     </div>
   </div>
-  <div class="zion-antenna-settings-host" style="display:none;">
+  <div class="zion-antenna-settings-host zion-display-none" id="zion-dialog-host">
+    <!--
     <div id="zion-antenna-settings-dialog" data-win-control="WinJS.UI.ContentDialog" data-win-options="{
              title: 'Main instruction',
              primaryCommandText: 'button1',
              secondaryCommandText: 'button2'        }">
       <div id="zion-antenna-settings-dialog-content"></div>
-    </div>
+    </div>-->
   </div>
 
 </body>

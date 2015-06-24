@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea800ac0-f82a-4e50-9e77-3c7f7abf1dbf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="DELETED" beforePath="E:\GITHUB\antenna-2\pages\antennasettings\antennasettings.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\GITHUB\antenna-2\pages\antennasettings\antennasettings.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\GITHUB\antenna-2\pages\antennasettings\antennasettings.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\GITHUB\antenna-2\pages\homepage\homepage.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\GITHUB\antenna-2\pages\homepage\homepage.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\GITHUB\antenna-2\pages\homepage\homepage.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\GITHUB\antenna-2\pages\lvscroll.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\GITHUB\antenna-2\pages\lvscroll.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/antenna-2.jsproj" afterPath="$PROJECT_DIR$/antenna-2.jsproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/default.css" afterPath="$PROJECT_DIR$/css/default.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/default.html" afterPath="$PROJECT_DIR$/default.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/default.js" afterPath="$PROJECT_DIR$/js/default.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/adddownstreamequip/pageaddingdownstreamequip.css" afterPath="$PROJECT_DIR$/pages/adddownstreamequip/pageaddingdownstreamequip.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/adddownstreamequip/pageaddingdownstreamequip.html" afterPath="$PROJECT_DIR$/pages/adddownstreamequip/pageaddingdownstreamequip.html" />
     </list>
     <ignored path="antenna-2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,21 +28,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pageaddinglowerequip.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/addlowerequip/pageaddinglowerequip.html">
+      <file leaf-file-name="pageaddingdownstreamequip.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/adddownstreamequip/pageaddingdownstreamequip.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7060134">
-              <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.38752785">
+              <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pageaddinglowerequip.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/addlowerequip/pageaddinglowerequip.css">
+      <file leaf-file-name="pageaddingdownstreamequip.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/adddownstreamequip/pageaddingdownstreamequip.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+              <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/default.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -65,6 +68,8 @@
       <list>
         <option value="$PROJECT_DIR$/pages/addlowerequip/pageaddinglowerequip.css" />
         <option value="$PROJECT_DIR$/pages/addlowerequip/pageaddinglowerequip.html" />
+        <option value="$PROJECT_DIR$/pages/adddownstreamequip/pageaddingdownstreamequip.html" />
+        <option value="$PROJECT_DIR$/pages/adddownstreamequip/pageaddingdownstreamequip.css" />
       </list>
     </option>
   </component>
@@ -172,7 +177,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="addlowerequip" />
+              <option name="myItemId" value="adddownstreamequip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="antenna-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="antenna-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -242,18 +261,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/addlowerequip/pageaddinglowerequip.css">
+    <entry file="file://$PROJECT_DIR$/pages/adddownstreamequip/pageaddingdownstreamequip.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+          <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/addlowerequip/pageaddinglowerequip.html">
+    <entry file="file://$PROJECT_DIR$/css/default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7060134">
-          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/adddownstreamequip/pageaddingdownstreamequip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38752785">
+          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
           <folding />
         </state>
       </provider>

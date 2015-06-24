@@ -115,7 +115,9 @@ font-family: "Segoe UI", Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅�
   .zion-page-host h2 {
     font-size: medium;
   }
-
+.zion-display-none {
+  display:none;
+}
 #statusMessage
 {
     position: fixed;

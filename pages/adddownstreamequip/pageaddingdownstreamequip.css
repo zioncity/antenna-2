@@ -53,31 +53,8 @@
 {
 	width: 12em;
 }
-.wrapper {
-    margin-top: 10px;
-}
-
-.pull-left {
-    float: left;
-}
 
 .zion-stretch-box {
     overflow: hidden; /* Creates a new block format context, which will make this tag fill the remaining width */
 }
 
-.demo-content-1,
-.demo-content-2,
-.demo-content-3,
-.demo-content-4 {
-    font-weight: bold;
-    background: blue;
-    color: white;
-}
-
-.demo-content-1 {
-    width: 100px;
-}
-
-.demo-content-2 {
-    width: 150px;
-}
