@@ -22,7 +22,7 @@
 
     }),
     batchAddEquipCommand: WinJS.UI.eventHandler(function (ev) {
-      var host = document.querySelector("#zion-dialog-host");
+/*      var host = document.querySelector("#zion-dialog-host");
       WinJS.Utilities.removeClass(host, "zion-display-none");
       WinJS.Utilities.empty(host);
       var dia = new WinJS.UI.ContentDialog(null, {
@@ -35,17 +35,10 @@
       WinJS.UI.Fragments.renderCopy("/fragments/batchadddsequip.html", cont).done(function () {
         dia.show();
       });
-      //dia.show();
-      /*      var dia = document.querySelector("#zion-antenna-settings-dialog").winControl;
-            var cont = dia.element.querySelector("#zion-antenna-settings-dialog-content");
-            cont.innerHTML = "";
-            
-            WinJS.UI.Pages.render("/pages/adddownstreamequip/pageaddingdownstreamequip.html", cont).done(function () {
-              dia.show();
-            });
-            */
-//      var renderHost = document.querySelector(".zion-page-rendered-control");
-//      WinJS.UI.Pages.render("/pages/adddownstreamequip/pageaddingdownstreamequip.html", renderHost).done(function () { });
+*/
+      var host = document.querySelector(".zion-page-rendered-control");
+      WinJS.Utilities.empty(host);
+      WinJS.UI.Pages.render("/pages/batchadddsequip/batchadddsequip.html", host).done(function () { });
     }),
     addEquipmentCommand: WinJS.UI.eventHandler(function (ev) {
 /*      var dia = document.querySelector("#zion-antenna-settings-dialog").winControl;

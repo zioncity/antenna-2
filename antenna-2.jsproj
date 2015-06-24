@@ -81,6 +81,9 @@
     <Content Include="pages\antennasettings\pageantennasettings.css" />
     <Content Include="pages\antennasettings\pageantennasettings.html" />
     <Content Include="pages\antennasettings\pageantennasettings.js" />
+    <Content Include="pages\batchadddsequip\batchadddsequip.css" />
+    <Content Include="pages\batchadddsequip\batchadddsequip.html" />
+    <Content Include="pages\batchadddsequip\batchadddsequip.js" />
     <Content Include="pages\ctrl\listview.css" />
     <Content Include="pages\ctrl\listview.html" />
     <Content Include="pages\ctrl\listview.js" />

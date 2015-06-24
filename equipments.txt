@@ -1,0 +1,12 @@
+name, id, province, city, gprs, 中文, 繁体
+name, id, province, city, gprs, 中文, 繁体
+name, id, province, city, gprs, 中文, 繁体
+name, id, province, city, gprs, 中文, 繁体
+name, id, province, city, gprs, 中文, 繁体
+name, id, province, city, gprs, 中文, 繁体
+name, id, province, city, gprs, 中文, 繁体
+name, id, province, city, gprs, 中文, 繁体
+name, id, province, city, gprs, 中文, 繁体
+name, id, province, city, gprs, 中文, 繁体
+name, id, province, city, gprs, 中文, 繁体
+name, id, province, city, gprs, 中文, 繁体

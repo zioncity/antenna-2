@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head >
+  <meta charset="utf-8" />
+  <title>batchadddsequip</title>
+  <link href="batchadddsequip.css" rel="stylesheet" />
+  <script src="batchadddsequip.js"></script>
+</head>
+<body>
+
+<div class="batchadddsequip fragment">
+  <progress id="zion-progress" max="0" value="0" style="width:100%;height:2px;"></progress>
+  <header class="page-header" aria-label="Header content" role="banner">
+    <h1 class="titlearea win-type-ellipsis win-h1" >
+      <span class="pagetitle">批量添加监控单元</span>
+    </h1>
+  </header>
+  <section class="page-section" aria-label="Main content" role="main">
+      <input type="file" id="fileinput" />
+
+    <!-- Simple template for the ListView instantiation  -->
+    <div class="zion-fields-template" data-win-control="WinJS.Binding.Template" style="display: none">
+      <div class="zion-fields-item">
+        <div class="zion-fields-item-detail">
+          <h2 class="win-h2" data-win-bind="textContent: name"></h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- The declarative markup necesary for ListView instantiation -->
+    <!-- Call WinJS.UI.processAll() in your initialization code -->
+    <div class="listView win-selectionstylefilled"
+         data-win-control="WinJS.UI.ListView"
+         data-win-options="{
+                itemDataSource: zion.batch.fields.dataSource,
+                itemTemplate: select('.zion-fields-template'),
+                selectionMode: 'none',
+                tapBehavior: 'none',layout: { type: WinJS.UI.GridLayout }
+        }">
+    </div>
+  </section>
+</div>
+</body>
+</html>
