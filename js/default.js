@@ -26,12 +26,12 @@
       var cont = dia.element.querySelector("#zion-antenna-settings-dialog-content");
       cont.innerHTML = "";
       
-      WinJS.UI.Pages.render("/pages/addlowerequip/pageaddinglowerequip.html", cont).done(function () {
+      WinJS.UI.Pages.render("/pages/addlowerequip/pageaddingdownstreamequip.html", cont).done(function () {
         dia.show();
       });
       */
-      var renderHost = document.querySelector(".renderingPageControls-renderedControl");
-      WinJS.UI.Pages.render("/pages/addlowerequip/pageaddinglowerequip.html", renderHost).done(function () { });
+      var renderHost = document.querySelector(".zion-page-rendered-control");
+      WinJS.UI.Pages.render("/pages/adddownstreamequip/pageaddingdownstreamequip.html", renderHost).done(function () { });
     })
   });
 })();
@@ -78,7 +78,7 @@
 //        new WinJS.UI._WinKeyboard(splitView.paneElement); // Temporary workaround: Draw keyboard focus visuals on NavBarCommands
       });
 
-      var renderHost = document.querySelector(".renderingPageControls-renderedControl");
+      var renderHost = document.querySelector(".zion-page-rendered-control");
 //      WinJS.UI.Pages.render("/pages/ctrl/listview.html", renderHost).done(function () {      });
     }, false);
     app.start();

@@ -74,9 +74,9 @@
     <Content Include="node_modules\winjs\License.txt" />
     <Content Include="node_modules\winjs\package.json" />
     <Content Include="node_modules\winjs\README.md" />
-    <Content Include="pages\addlowerequip\pageaddinglowerequip.css" />
-    <Content Include="pages\addlowerequip\pageaddinglowerequip.html" />
-    <Content Include="pages\addlowerequip\pageaddinglowerequip.js" />
+    <Content Include="pages\adddownstreamequip\pageaddingdownstreamequip.css" />
+    <Content Include="pages\adddownstreamequip\pageaddingdownstreamequip.html" />
+    <Content Include="pages\adddownstreamequip\pageaddingdownstreamequip.js" />
     <Content Include="pages\antennasettings\pageantennasettings.css" />
     <Content Include="pages\antennasettings\pageantennasettings.html" />
     <Content Include="pages\antennasettings\pageantennasettings.js" />

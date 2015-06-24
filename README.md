@@ -8,7 +8,7 @@ phrases
 - Azimuth : 方位角
 - Inclination angle : 下倾角
 - Pole dip: 抱杆倾角
-- lower equipment: 通信下位机
+- downstream equipment: 通信下位机
 - monitors : 监测子系统
 - antennas monitor unit : 天线监测单元
 - latitude and longitude : 经纬度
@@ -38,7 +38,7 @@ parameters
 antenna attitude msg format
 ----
 
-- lower machine id
+- downstream equipment id
 - monitor group id
 - inclination angle
 - orientation angle

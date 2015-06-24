@@ -50,10 +50,10 @@ font-family: "Segoe UI", Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅�
 }
 
 #app .contenttext {
-    margin-left: 20px;
-    margin-top: 6px;
+    margin: 20px;
+/*    margin-top: 6px;*/
     height:100%;
-    overflow-y:scroll;
+/*    overflow-y:scroll;*/
 }
 #content {
 	text-align: center;
@@ -107,14 +107,14 @@ font-family: "Segoe UI", Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅�
     background-color: #444;
 }
 
-.renderingPageControls-controlHost {
-    width: 100%;
-    padding-top: 30px;
+.zion-page-host {
+  /*    width: 100%;*/
+  /*    padding-top: 30px;*/
 }
 
-    .renderingPageControls-controlHost h2 {
-        font-size: medium;
-    }
+  .zion-page-host h2 {
+    font-size: medium;
+  }
 
 #statusMessage
 {
