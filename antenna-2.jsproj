@@ -74,17 +74,18 @@
     <Content Include="node_modules\winjs\License.txt" />
     <Content Include="node_modules\winjs\package.json" />
     <Content Include="node_modules\winjs\README.md" />
-    <Content Include="pages\antennasettings\antennasettings.css" />
-    <Content Include="pages\antennasettings\antennasettings.html" />
-    <Content Include="pages\antennasettings\antennasettings.js" />
+    <Content Include="pages\addlowerequip\pageaddinglowerequip.css" />
+    <Content Include="pages\addlowerequip\pageaddinglowerequip.html" />
+    <Content Include="pages\addlowerequip\pageaddinglowerequip.js" />
+    <Content Include="pages\antennasettings\pageantennasettings.css" />
+    <Content Include="pages\antennasettings\pageantennasettings.html" />
+    <Content Include="pages\antennasettings\pageantennasettings.js" />
     <Content Include="pages\ctrl\listview.css" />
     <Content Include="pages\ctrl\listview.html" />
     <Content Include="pages\ctrl\listview.js" />
-    <Content Include="pages\homepage\homepage.css" />
-    <Content Include="pages\homepage\homepage.html" />
-    <Content Include="pages\homepage\homepage.js" />
-    <Content Include="pages\lvscroll.html" />
-    <Content Include="pages\lvscroll.js" />
+    <Content Include="pages\homepage\pagehome.css" />
+    <Content Include="pages\homepage\pagehome.html" />
+    <Content Include="pages\homepage\pagehome.js" />
     <Content Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />

@@ -11,15 +11,27 @@
         status.textContent = msg;
       }
     }),
+    //
     antennaSettingsCommand: WinJS.UI.eventHandler(function (ev) {
       var dia = document.querySelector("#zion-antenna-settings-dialog").winControl;
       var cont = dia.element.querySelector("#zion-antenna-settings-dialog-content");
-      cont.innerHTML = "";
-      ///pages/antennasettings/antennasettings.html
-      WinJS.UI.Pages.render("/pages/antennasettings/antennasettings.html", cont).done(function () {
+      cont.innerHTML = "";      
+      WinJS.UI.Pages.render("/pages/antennasettings/pageantennasettings.html", cont).done(function () {
         dia.show();
       });
 
+    }),
+    addEquipmentCommand: WinJS.UI.eventHandler(function (ev) {
+/*      var dia = document.querySelector("#zion-antenna-settings-dialog").winControl;
+      var cont = dia.element.querySelector("#zion-antenna-settings-dialog-content");
+      cont.innerHTML = "";
+      
+      WinJS.UI.Pages.render("/pages/addlowerequip/pageaddinglowerequip.html", cont).done(function () {
+        dia.show();
+      });
+      */
+      var renderHost = document.querySelector(".renderingPageControls-renderedControl");
+      WinJS.UI.Pages.render("/pages/addlowerequip/pageaddinglowerequip.html", renderHost).done(function () { });
     })
   });
 })();

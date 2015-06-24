@@ -27,7 +27,7 @@
         </div>
         <div class="nav-commands">
           <div id="zion-antenna-settings" data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '天线姿态监测设置', icon: '\uE1E9', onclick:zion.antennaSettingsCommand}"></div>
-          <div data-win-control="WinJS.UI.NavBarCommand" 
+          <div data-win-control="WinJS.UI.NavBarCommand"
                data-win-options="{ label: '天线姿态查询', icon: '\uE11A'}"></div>
           <div data-win-control="WinJS.UI.NavBarCommand"
                data-win-options="{ label: '告警查询', icon: '\uE129'}"></div>
@@ -37,8 +37,8 @@
           <div class="zion-split-seperator"></div>
           <div class="win-h4">监测子系统管理</div>
         </div>
-        <div >
-          <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '添加监测子系统', icon: '\uE1C9'}"></div>
+        <div>
+          <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '添加监测子系统', icon: '\uE1C9', onclick:zion.addEquipmentCommand}"></div>
           <div data-win-control="WinJS.UI.NavBarCommand"
                data-win-options="{ label: '批量添加', icon: '\uE109'}"></div>
           <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '监测子系统查询', icon: '\uE11A'}"></div>
@@ -68,9 +68,10 @@
       <!-- Content area -->
       <div class="contenttext">
         <h2 class="win-h2">天线姿态自动监测管理系统</h2>
-<!--        <div class="renderingPageControls-controlHost">
+        <!-- -->
+        <div class="renderingPageControls-controlHost">
           <div class="renderingPageControls-renderedControl"></div>
-        </div>-->
+        </div>
 
       </div>
     </div>
