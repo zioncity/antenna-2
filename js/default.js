@@ -26,9 +26,9 @@
       WinJS.Utilities.removeClass(host, "zion-display-none");
       WinJS.Utilities.empty(host);
       var dia = new WinJS.UI.ContentDialog(null, {
-        title: 'Main instruction',
-        primaryCommandText: 'button1',
-        secondaryCommandText: 'button2'
+        title: '批量添加监测子系统',
+        primaryCommandText: '确定',
+        secondaryCommandText: '取消'
       });
       var cont = dia.element.querySelector(".win-contentdialog-content");
       host.appendChild(dia.element);
