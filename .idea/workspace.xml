@@ -58,6 +58,7 @@
               <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#progress#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -90,9 +91,9 @@
         <entry file="file://$PROJECT_DIR$/pages/batchadddsequip/batchadddsequip.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
               <folding>
-                <marker date="1435157439214" expanded="true" signature="25:27" placeholder="{...}" />
+                <marker date="1435159942690" expanded="true" signature="25:27" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -102,7 +103,7 @@
         <entry file="file://$PROJECT_DIR$/pages/batchadddsequip/batchadddsequip.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+              <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -150,10 +151,10 @@
         <option value="$PROJECT_DIR$/pages/adddownstreamequip/pageaddingdownstreamequip.html" />
         <option value="$PROJECT_DIR$/pages/adddownstreamequip/pageaddingdownstreamequip.css" />
         <option value="$PROJECT_DIR$/fragments/batchadddsequip.html" />
-        <option value="$PROJECT_DIR$/pages/batchadddsequip/batchadddsequip.html" />
         <option value="$PROJECT_DIR$/pages/antennasettings/pageantennasettings.js" />
         <option value="$PROJECT_DIR$/pages/batchadddsequip/batchadddsequip.css" />
         <option value="$PROJECT_DIR$/pages/batchadddsequip/batchadddsequip.js" />
+        <option value="$PROJECT_DIR$/pages/batchadddsequip/batchadddsequip.html" />
       </list>
     </option>
   </component>
@@ -542,9 +543,9 @@
     <entry file="file://$PROJECT_DIR$/pages/batchadddsequip/batchadddsequip.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
           <folding>
-            <marker date="1435157439214" expanded="true" signature="25:27" placeholder="{...}" />
+            <marker date="1435159942690" expanded="true" signature="25:27" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -552,7 +553,7 @@
     <entry file="file://$PROJECT_DIR$/pages/batchadddsequip/batchadddsequip.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -563,6 +564,7 @@
           <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#progress#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
