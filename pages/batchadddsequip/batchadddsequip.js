@@ -20,7 +20,7 @@
       //Retrieve the first (and only!) File from the FileList object
       var file = evt.target.files[0];
       if (!file) return;
-
+      WinJS.Utilities.removeClass(read_progress, "zion-display-none");
       read_progress.max = file.size;
       read_progress.value = 0;
       var reader = new FileReader();
@@ -40,6 +40,7 @@
           zion.batch.fields.push({ name: field });
         });
         read_progress.value = read_progress.max;
+        WinJS.Utilities.addClass(read_progress, "zion-display-none");
       }
 
       reader.readAsText(file);

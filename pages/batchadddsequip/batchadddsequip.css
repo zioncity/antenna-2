@@ -1,10 +1,12 @@
 .batchadddsequip section {
+  margin:0 auto !important;
+  max-width: 1024px;
 }
 
 .phone .batchadddsequip .page-section {
   margin: auto 24px;
 }
-
+ /*style="margin:0 auto !important; max-width:1024px;"*/
 .phone .batchadddsequip .page-header .titlearea {
   -ms-grid-column: 1;
   margin-top: 37px;
