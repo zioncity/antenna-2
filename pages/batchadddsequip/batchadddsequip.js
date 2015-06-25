@@ -3,11 +3,22 @@
   var _fields = [];  // {name:"the name"}
   WinJS.Namespace.define("zion.batch", {
     on_field_selected: WinJS.UI.eventHandler(function (e) {
-      var parent = e.target;
+      var btn = e.target;
+      var parent = btn.parentNode;  //zion-fields-item
       var menu = document.querySelector("#zion-batch-field-menu").winControl;
-      menu.show(parent, "top");
+      menu._target_item = parent;
+      menu.show(parent, "bottom", "right");
     }),
-    fields: new WinJS.Binding.List(_fields)
+    fields: new WinJS.Binding.List(),
+    confirm_fields_map: WinJS.UI.eventHandler(function (e) {
+      var lv = document.querySelector("#zion-fields");
+      var items = lv.getElementsByClassName("zion-fields-item");
+      for (var i = 0; i < items.length; i++) {
+        var item = items.item(i);
+        var to = item.querySelector("#zion-field-target");
+        zion.batch.fields[i].target = to.textContent;
+      }
+    })
   });
 
   function isSupportFileApi() {
@@ -41,7 +52,7 @@
         if (contents && contents.length > 0)
           fields = contents[0].split(',');
         fields.forEach(function (field) {
-          zion.batch.fields.push({ name: field });
+          zion.batch.fields.push({ name: field, target:"" });
         });
         read_progress.value = read_progress.max;
         WinJS.Utilities.addClass(read_progress, "zion-display-none");

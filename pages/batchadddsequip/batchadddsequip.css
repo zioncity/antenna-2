@@ -41,3 +41,9 @@
 #zion-field-target {
   padding: 4px 8px;
 }
+#zion-fields {
+  height:auto;
+}
+#zion-fields > .win-viewport.win-vertical {
+  overflow-y:hidden;
+}

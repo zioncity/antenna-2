@@ -58,10 +58,6 @@
 #zion-fields > .win-viewport.win-vertical {
   overflow-y:hidden;
 }
-/* CSS applied to the ListViews in this sample */
-.listView{
-
-}
 
 .win-viewport{
     -ms-overflow-style: scrollbar;

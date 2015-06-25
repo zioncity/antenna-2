@@ -29,22 +29,24 @@
     <!-- Simple template for the ListView instantiation  -->
     <div class="zion-fields-template" data-win-control="WinJS.Binding.Template" style="display: none">
       <div class="zion-fields-item">
-        <button class="win-button" data-win-bind="textContent: name" onclick="zion.batch.on_field_selected(event)"></button>
-        <h6 id="zion-field-target" class="win-h6"></h6>
+        <button class="win-button" data-win-bind="textContent: name" id="zion-field-origin"
+                onclick="zion.batch.on_field_selected(event)"></button>
+        <h6 id="zion-field-target" class="win-h6" data-win-bind="textContent: target"></h6>
       </div>
     </div>
 
     <!-- The declarative markup necesary for ListView instantiation -->
     <!-- Call WinJS.UI.processAll() in your initialization code -->
-    <div class="listView win-selectionstylefilled"
+    <div class="listView win-selectionstylefilled" id="zion-fields"
          data-win-control="WinJS.UI.ListView"
          data-win-options="{
                 itemDataSource: zion.batch.fields.dataSource,
                 itemTemplate: select('.zion-fields-template'),
                 selectionMode: 'none',
-                tapBehavior: 'invokeOnly',layout: { type: WinJS.UI.GridLayout,orientation:'vertical' }
+                tapBehavior: 'none',layout: { type: WinJS.UI.GridLayout,orientation:'vertical' }
         }">
     </div>
+    <button class="win-button" id="zion-confirm-fields-map" onclick="zion.batch.confirm_fields_map(event)">确定</button>
   </section>
 </div>
 </body>
