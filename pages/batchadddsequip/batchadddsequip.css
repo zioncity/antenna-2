@@ -1,12 +1,11 @@
 .batchadddsequip section {
-  margin:0 auto !important;
-  max-width: 1024px;
+/*  margin:0 auto !important;
+  max-width: 1024px;*/
 }
 
 .phone .batchadddsequip .page-section {
   margin: auto 24px;
 }
- /*style="margin:0 auto !important; max-width:1024px;"*/
 .phone .batchadddsequip .page-header .titlearea {
   -ms-grid-column: 1;
   margin-top: 37px;
@@ -31,13 +30,14 @@
   -ms-grid-row: 2;
   height: 100%;
 }
-.zion-fields-item
-{
-    width: 242px;
-    height: 70px;
-    padding: 5px;
-    overflow: hidden;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+
+.zion-fields-item {
+  width: 242px;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+#zion-field-target {
+  padding: 4px 8px;
 }

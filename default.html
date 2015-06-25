@@ -15,6 +15,25 @@
   <!--<script src="/pages/ctrl/listview.js"></script>-->
 </head>
 <body>
+  <div id="zion-batch-field-menu" data-win-control="WinJS.UI.Menu">
+    <button data-win-control="WinJS.UI.MenuCommand" 
+            data-win-options="{label:'系统编号', type:'button', onclick:zion.select_field_1}"></button>
+    <button data-win-control="WinJS.UI.MenuCommand" 
+            data-win-options="{label:'GPRS号码', type:'button', onclick:zion.select_field_1}"></button>
+    <hr data-win-control="WinJS.UI.MenuCommand" data-win-options="{type: 'separator'}" />
+    <button data-win-control="WinJS.UI.MenuCommand" 
+            data-win-options="{label:'站点名称', type:'button', onclick:zion.select_field_1}"></button>
+    <button data-win-control="WinJS.UI.MenuCommand" 
+            data-win-options="{label:'省份', type:'button', onclick:zion.select_field_1}"></button>
+    <button data-win-control="WinJS.UI.MenuCommand" 
+            data-win-options="{label:'市县', type:'button', onclick:zion.select_field_1}"></button>
+    <button data-win-control="WinJS.UI.MenuCommand"
+            data-win-options="{label:'忽略', type:'button', onclick:zion.select_field_1}"></button>
+  </div>
+  <div id="zion-field-map-menu" data-win-control="WinJS.UI.Flyout">
+    <div>Your account will be charged $252.</div>
+    <button class="win-button" id="confirmButton">Complete Order</button>
+  </div>
   <div id="app">
     <div class="splitView" data-win-control="WinJS.UI.SplitView">
       <!-- Pane area -->
@@ -25,6 +44,7 @@
                   data-win-options="{ splitView: select('.splitView') }"></button>
           <div class="title">天线姿态监测管理</div>
         </div>
+
         <div class="nav-commands">
           <div id="zion-antenna-settings" data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '天线姿态监测设置', icon: '\uE1E9', onclick:zion.antennaSettingsCommand}"></div>
           <div data-win-control="WinJS.UI.NavBarCommand"
@@ -51,7 +71,7 @@
           <div class="win-h4">用户权限管理</div>
         </div>
         <div>
-          <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '管理员密码', icon: '\uE125'}"></div>
+          <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '管理员密码', icon: '\uE125', onclick: zion.changePasswordCommand}"></div>
           <div id="buyButton" data-win-control="WinJS.UI.NavBarCommand"
                data-win-options="{ label: '权限', icon: '\uE192'}"></div>
         </div>
@@ -63,13 +83,15 @@
           <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '网站日志', icon: '\uE160'}"></div>
           <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: '网站统计', icon: '\uE292'}"></div>
         </div>
+
+
       </div>
       <!-- Scenario Controls -->
       <!-- Content area -->
-      <div class="contenttext">
+      <div class="contenttext zion-fragment">
         <h2 class="win-h2">天线姿态自动监测管理系统</h2>
         <!-- -->
-        <div class="zion-page-host">
+        <div class="zion-page-host zion-section" role="main">
           <div class="zion-page-rendered-control"></div>
         </div>
 
@@ -77,13 +99,13 @@
     </div>
   </div>
   <div class="zion-antenna-settings-host zion-display-none" id="zion-dialog-host">
-    <!--
-    <div id="zion-antenna-settings-dialog" data-win-control="WinJS.UI.ContentDialog" data-win-options="{
+    <!-- -->
+    <div class="zion-display-none" id="zion-antenna-settings-dialog" data-win-control="WinJS.UI.ContentDialog" data-win-options="{
              title: 'Main instruction',
              primaryCommandText: 'button1',
              secondaryCommandText: 'button2'        }">
       <div id="zion-antenna-settings-dialog-content"></div>
-    </div>-->
+    </div>
   </div>
 
 </body>

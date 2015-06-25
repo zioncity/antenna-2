@@ -14,29 +14,29 @@
         <span class="pagetitle">Welcome to toolbar</span>
       </h1>
     </header>
-    <section class="page-section" aria-label="Main content" role="main">
+    <section class="section" aria-label="Main content" role="main">
       <!-- Simple template for the ListView instantiation  -->
       <div class="smallListIconTextTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
-        <div class="smallListIconTextItem">
-          <div class="smallListIconTextItem-Detail">
-            <h4 class="win-h4" data-win-bind="textContent: title"></h4>
-            <h6 class="win-h6" data-win-bind="textContent: text"></h6>
-          </div>
+        <div class="zion-fields-item">
+            <button class="win-button" data-win-bind="textContent: name" id="zion-field-origin"
+                    onclick="zion.on_field_selected(event)"></button>
+            <h6 id="zion-field-target" class="win-h6" data-win-bind="textContent: title" ></h6>
         </div>
       </div>
-
+     <!---- <button id="zion-show-menu" class="win-button">show menu</button>-->
       <!-- The declarative markup necesary for ListView instantiation -->
       <!-- Call WinJS.UI.processAll() in your initialization code -->
-      <div class="listView win-selectionstylefilled"
+      <div class="listView win-selectionstylefilled" id="zion-fields"
            data-win-control="WinJS.UI.ListView"
            data-win-options="{
                 itemDataSource: Sample.ListView.data.dataSource,
                 itemTemplate: select('.smallListIconTextTemplate'),
                 selectionMode: 'none',
                 tapBehavior: 'none',
-                layout: { type: WinJS.UI.ListLayout }
+                layout: { type: WinJS.UI.GridLayout, orientation:'vertical'}
         }">
       </div>
+      <button class="win-button" id="zion-confirm-fields-map" onclick="zion.confirm_fields_map(event)">确定</button>
     </section>
   </div>
 </body>

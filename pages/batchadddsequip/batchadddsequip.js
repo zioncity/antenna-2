@@ -2,6 +2,11 @@
   "use strict;"
   var _fields = [];  // {name:"the name"}
   WinJS.Namespace.define("zion.batch", {
+    on_field_selected: WinJS.UI.eventHandler(function (e) {
+      var parent = e.target;
+      var menu = document.querySelector("#zion-batch-field-menu").winControl;
+      menu.show(parent, "top");
+    }),
     fields: new WinJS.Binding.List(_fields)
   });
 
@@ -11,7 +16,6 @@
     }
     return false;
   }
-
 
   WinJS.UI.Pages.define("/pages/batchadddsequip/batchadddsequip.html", {
     read_progress: null,
@@ -50,6 +54,7 @@
     ready: function (element, options) {
       read_progress = element.querySelector("#zion-progress");      
       document.getElementById('fileinput').addEventListener('change', this.read_text_file, false);
+
     },
 
     unload: function () {

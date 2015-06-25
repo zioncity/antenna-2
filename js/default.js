@@ -13,8 +13,8 @@
     }),
     //
     antennaSettingsCommand: WinJS.UI.eventHandler(function (ev) {
-      var dia = document.querySelector("#zion-antenna-settings-dialog").winControl;
-      var cont = dia.element.querySelector("#zion-antenna-settings-dialog-content");
+      var dia = document.querySelector("#zion-antenna-settings-dialog");
+      var cont = dia.querySelector("#zion-antenna-settings-dialog-content");
       cont.innerHTML = "";      
       WinJS.UI.Pages.render("/pages/antennasettings/pageantennasettings.html", cont).done(function () {
         dia.show();
@@ -40,17 +40,29 @@
       WinJS.Utilities.empty(host);
       WinJS.UI.Pages.render("/pages/batchadddsequip/batchadddsequip.html", host).done(function () { });
     }),
+    changePasswordCommand: WinJS.UI.eventHandler(function (ev) {
+      var host = document.querySelector(".zion-page-rendered-control");
+      WinJS.UI.Pages.render("/pages/ctrl/listview.html", host).done(function () { });
+    }),
+
     addEquipmentCommand: WinJS.UI.eventHandler(function (ev) {
 /*      var dia = document.querySelector("#zion-antenna-settings-dialog").winControl;
       var cont = dia.element.querySelector("#zion-antenna-settings-dialog-content");
       cont.innerHTML = "";
       
-      WinJS.UI.Pages.render("/pages/addlowerequip/pageaddingdownstreamequip.html", cont).done(function () {
+      WinJS.UI.Pages.render("/pages/adddownstreamequip/pageaddingdownstreamequip.html", cont).done(function () {
         dia.show();
       });
       */
       var renderHost = document.querySelector(".zion-page-rendered-control");
       WinJS.UI.Pages.render("/pages/adddownstreamequip/pageaddingdownstreamequip.html", renderHost).done(function () { });
+    }),
+
+    select_field_1: WinJS.UI.eventHandler(function (e) {
+      var menu_item = e.target;
+      var menu = e.target.parentElement.winControl;
+      var to = menu._target_item.querySelector("#zion-field-target");
+      to.textContent = menu_item.textContent;
     })
   });
 })();
@@ -92,9 +104,11 @@
     }
 
     app.addEventListener("ready", function () {
+      //var anh = document.querySelector("#zion-app-nav-host");
+//            WinJS.UI.Fragments.renderCopy("/fragments/appnav.html", anh).then(WinJS.UI.processAll).done(function () {
       WinJS.UI.processAll().done(function () {
-//        var splitView = document.querySelector(".splitView").winControl;
-//        new WinJS.UI._WinKeyboard(splitView.paneElement); // Temporary workaround: Draw keyboard focus visuals on NavBarCommands
+//        var splitview = document.querySelector(".splitView").winControl;
+//        new WinJS.UI._WinKeyboard(splitview.paneElement); // Temporary workaround: Draw keyboard focus visuals on NavBarCommands
       });
 
       var renderHost = document.querySelector(".zion-page-rendered-control");
