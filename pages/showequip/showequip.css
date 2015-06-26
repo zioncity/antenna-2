@@ -83,3 +83,8 @@
   padding: 4px 8px;
 }
 
+.zion-eid-header a{
+  float: right;
+  padding: 0 1em;
+  font-size: small;
+}

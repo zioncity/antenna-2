@@ -19,20 +19,22 @@
       <div class="zion-equipment-listitem-template" data-win-control="WinJS.Binding.Template" style="display: none">
         <div class="zion-equipment-item">
           <div class="zion-equipment-item-detail">
-            <h4 class="win-h4 zion-eid-header"><span data-win-bind="textContent: name"></span><span> - </span><span data-win-bind="textContent: no" /></h4>
+            <h4 class="win-h4 zion-eid-header">
+              <span data-win-bind="textContent: name"></span><span> - </span>
+              <span data-win-bind="textContent: no"></span><span> - </span>
+              <span data-win-bind="textContent: gprs"></span>
+
+              <a href="#">详情</a>
+              <a href="#">告警</a>
+              <a href="#">删除</a>
+            </h4>
             <ul>
-              <li>方位角 : 11</li>
-              <li>下倾角 : 0.2</li>
-              <li>横滚角 : -90</li>
-              <li>监测单元编号	:	22</li>
-              <li>连接状态	移动(1)</li>
-              <li>开通状态	: 小白楼-2</li>
-              <li>纬度	1100</li>
-              <li>经度 24</li>
-              <li>GPRS卡号	:	23</li>
-              <li>站点名称	字符串	20</li>
-              <li>市县	字符串	20</li>
-              <li>省份	字符串	20</li>
+              <li>连接状态 : <span data-win-bind="textContent: online"></span></li>
+              <li>开通状态	: <span data-win-bind="textContent: activate"></span></li>
+              <li>纬经度 :	<span data-win-bind="textContent: lat"></span>, <span data-win-bind="textContent: lng"></span></li>
+              <li>位置 :	<span data-win-bind="textContent: location"></span></li>
+              <li>省份 :	<span data-win-bind="textContent: province"></span></li>
+              <li>市县 :	<span data-win-bind="textContent: city"></span></li>
             </ul>
           </div>
           <div id="zion-equip-actions-host">

@@ -14,6 +14,7 @@
     //
     antennaSettingsCommand: WinJS.UI.eventHandler(function (ev) {
       var dia = document.querySelector("#zion-antenna-settings-dialog");
+      if (!dia) return;
       var cont = dia.querySelector("#zion-antenna-settings-dialog-content");
       cont.innerHTML = "";      
       WinJS.UI.Pages.render("/pages/antennasettings/pageantennasettings.html", cont).done(function () {
@@ -104,7 +105,7 @@
     }
 
     app.addEventListener("ready", function () {
-      //var anh = document.querySelector("#zion-app-nav-host");
+//      var anh = document.querySelector("#zion-app-nav-host");
 //            WinJS.UI.Fragments.renderCopy("/fragments/appnav.html", anh).then(WinJS.UI.processAll).done(function () {
       WinJS.UI.processAll().done(function () {
 //        var splitview = document.querySelector(".splitView").winControl;
