@@ -1,0 +1,85 @@
+﻿.fragment {
+  -ms-grid-columns: 1fr;
+  -ms-grid-rows: 128px 1fr;
+  display: -ms-grid;
+}
+
+.fragment section[role=main] {
+  -ms-grid-row: 2;
+}
+/* Template for the items in the ListViews in this sample */
+#sample {
+}
+
+#sample .zion-equipment-item {
+  width: 100%;
+  padding: 5px;
+  overflow: hidden;
+}
+
+#sample .zion-equipment-item .zion-equipment-item-detail {
+  margin: 5px;
+}
+
+#zion-equip-actions-host {
+}
+
+#zion-equip-actions-host ul
+{
+  margin: 0;
+  list-style-type: none;
+  float: right;
+  font-size: smaller;
+}
+
+#zion-equip-actions-host li { display: inline; }
+
+#zion-equip-actions-host ul li a
+{
+  text-decoration: none;
+  padding: .2em 1em;
+}
+
+#zion-equip-actions-host ul li a:hover
+{
+  background-color: #ddd;
+}
+
+#sample .zion-headfoot-host {
+  display: none;
+}
+
+/* CSS applied to the ListViews in this sample */
+#sample .listView
+{
+}
+#sample .win-listview {
+  height: auto;
+}
+#sample .listView .header,
+#sample .listView .footer {
+    padding: 10px;
+    background-color: #d1d1d1;
+}
+
+#zion-fields {
+  height:auto;
+}
+#zion-fields > .win-viewport.win-vertical {
+  overflow-y: hidden;
+}
+
+.win-viewport {
+  -ms-overflow-style: scrollbar;
+}
+.zion-fields-item {
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+#zion-field-target {
+  padding: 4px 8px;
+}
+

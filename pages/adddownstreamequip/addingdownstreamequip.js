@@ -21,7 +21,7 @@
           { id: 5, description: "开封(5)" }
       ])
     });
-    WinJS.UI.Pages.define("/pages/adddownstreamequip/pageaddingdownstreamequip.html", {
+    WinJS.UI.Pages.define("/pages/adddownstreamequip/addingdownstreamequip.html", {
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {

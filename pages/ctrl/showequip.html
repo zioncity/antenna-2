@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>toolbar</title>
+
+    <link href="showequip.css" rel="stylesheet" />
+    <script src="showequip.js"></script>
+</head>
+<body>
+  <div class="toolbar fragment">
+    <header class="page-header" aria-label="Header content" role="banner">
+      <h1 class="titlearea win-type-ellipsis">
+        <span class="pagetitle">监测子系统</span>
+      </h1>
+    </header>
+    <section class="section" aria-label="Main content" role="main" id="sample">
+      <!--   -->
+      <div class="zion-equipment-listitem-template" data-win-control="WinJS.Binding.Template" style="display: none">
+        <div class="zion-equipment-item">
+          <div class="zion-equipment-item-detail">
+            <h4 class="win-h4 zion-eid-header">
+              <span data-win-bind="textContent: name"></span><span> - </span>
+              <span data-win-bind="textContent: no" ></span><span> - </span>
+              <span data-win-bind="textContent: gprs"></span>
+
+              <a href="#">详情</a>
+              <a href="#">告警</a>
+              <a href="#">删除</a>
+            </h4>
+            <ul>
+              <li>连接状态 : <span data-win-bind="textContent: online"></span></li>
+              <li>开通状态	: <span data-win-bind="textContent: activate"></span></li>
+              <li>纬经度 :	<span data-win-bind="textContent: lat"></span>, <span data-win-bind="textContent: lng"></span></li>
+              <li>位置 :	<span data-win-bind="textContent: location"></span></li>
+              <li>省份 :	<span data-win-bind="textContent: province"></span></li>
+              <li>市县 :	<span data-win-bind="textContent: city"></span></li>
+            </ul>
+          </div>
+          <!--
+        <div id="zion-equip-actions-host">
+          <ul>
+            <li><a href="#">详情</a></li>
+            <li><a href="#">告警</a></li>
+            <li><a href="#">删除</a></li>
+
+          </ul>
+        </div>
+          -->
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="zion-headfoot-host">
+        <div class="header">
+          <h2 class="win-h2">设备名称类似186xxxxxxxx</h2>
+          <p>共120条 最近一周更新 3条告警</p>
+        </div>
+
+        <div class="footer">
+          <p>滚动 AND 滚动...</p>
+        </div>
+      </div>
+
+      <!-- Call WinJS.UI.processAll() in your initialization code -->
+      <div class="listView win-selectionstylefilled"
+           data-win-control="WinJS.UI.ListView"
+           data-win-options="{
+                    itemDataSource: Sample.ListView.data.dataSource,
+                    itemTemplate: select('.zion-equipment-listitem-template'),
+                    header: select('.header'),
+                    footer: select('.footer'),
+                    selectionMode: 'none',
+                    tapBehavior: 'none',
+                    layout: { type: WinJS.UI.ListLayout }
+            }">
+      </div>
+
+    </section>
+  </div>
+</body>
+</html>

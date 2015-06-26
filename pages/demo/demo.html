@@ -7,8 +7,25 @@
   <script src="demo.js"></script>
 </head>
 <body>
-<div id="head" style="height:100px;background:yellow;"></div>
-<div id="body" style="height:2000px;background:gray;"></div>
-<div id="foot" style="height:200px;background:red;"></div>
+<div class="zion-equipment-item-detail">
+  <h4 class="win-h4 zion-eid-header">
+    <span data-win-bind="textContent: name">海龙北</span><span> - </span>
+    <span data-win-bind="textContent: no" >19610051780</span><span> - </span>
+    <span data-win-bind="textContent: gprs">19610051780</span>
+
+    <a href="#">详情</a>
+    <a href="#">告警</a>
+    <a href="#">删除</a>
+  </h4>
+  <ul>
+    <li>连接状态 : <span data-win-bind="textContent: online"></span></li>
+    <li>开通状态	: <span data-win-bind="textContent: activate"></span></li>
+    <li>纬经度 :	<span data-win-bind="textContent: lat"></span>, <span data-win-bind="textContent: lng"></span></li>
+    <li>位置 :	<span data-win-bind="textContent: location"></span></li>
+    <li>省份 :	<span data-win-bind="textContent: province"></span></li>
+    <li>市县 :	<span data-win-bind="textContent: city"></span></li>
+  </ul>
+</div>
+
 </body>
 </html>

@@ -1,0 +1,37 @@
+.zion-equipment-item {
+  width: 100%;
+  padding: 5px;
+}
+.zion-equipment-item .zion-equipment-item-detail {
+  margin: 5px;
+}
+
+#navcontainer ul
+{
+  margin: 0;
+  list-style-type: none;
+}
+
+#navcontainer li {
+  display: inline-block;
+  width: 160px;
+  text-overflow: ellipsis;
+  overflow:hidden;
+  height:20px;
+}
+
+#navcontainer ul li a
+{
+  text-decoration: none;
+  padding: .2em 1em;
+}
+
+#navcontainer ul li:hover
+{
+  background-color: #f0f0f0;
+}
+.zion-eid-header a{
+  float: right;
+  padding: 0 1em;
+  font-size: smaller;
+}
