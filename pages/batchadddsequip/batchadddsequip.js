@@ -1,7 +1,8 @@
 ﻿(function(){
   "use strict;"
   var _fields = [];  // {name : "province", index : 0, origin:"省份"}
-  
+  var _csv_text = null; //[]string, lines
+
   WinJS.Namespace.define("zion.batch", {
     fields_desc: {desc :""},
     on_field_selected: WinJS.UI.eventHandler(function (e) {
@@ -11,7 +12,23 @@
       menu._target_item = parent;
       menu.show(parent, "bottom", "right");
     }),
+
     fields: new WinJS.Binding.List(),
+    update_results : new WinJS.Binding.List(),
+    upsert_worker: function (text) {
+      return function () {
+        zion.batch.update_results.push({ result: text });
+      }
+    },
+    start_upsert: WinJS.UI.eventHandler(function (e) {
+      var S = WinJS.Utilities.Scheduler;
+      var lines = _csv_text || [];
+      for (var i = 1; i < lines.length; i++) {
+        var text = lines[i];
+        S.schedule(zion.batch.upsert_worker(text), S.Priority.normal);
+      }
+    }),
+
     confirm_fields_map: WinJS.UI.eventHandler(function (e) {
       _fields = [];
       var lv = document.querySelector("#zion-fields");
@@ -37,7 +54,7 @@
     }
     return false;
   }
-  var _csv_text = null;
+
   WinJS.UI.Pages.define("/pages/batchadddsequip/batchadddsequip.html", {
     read_progress: null,
     read_text_file: function (evt) {

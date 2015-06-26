@@ -26,7 +26,6 @@
       <button data-win-control="WinJS.UI.MenuCommand" data-win-options="{label:'button option', type:'button'}"></button>
       <button data-win-control="WinJS.UI.MenuCommand" data-win-options="{label:'toggle option', type:'toggle', selected: true}"></button>
     </div>
-    <!-- Simple template for the ListView instantiation  -->
     <div class="zion-fields-template" data-win-control="WinJS.Binding.Template" style="display: none">
       <div class="zion-fields-item">
         <button class="win-button" data-win-bind="textContent: name" id="zion-field-origin"
@@ -47,11 +46,18 @@
         }">
     </div>
     <button class="win-button" id="zion-confirm-fields-map" onclick="zion.batch.confirm_fields_map(event)">确定</button>
+    <button class="win-button" id="zion-start-upsert" onclick="zion.batch.start_upsert(event)">开始</button>
+
     <div id="zion-fields-map-result">
       <p>
         <span data-win-bind="innerHTML: desc"></span>
       </p>
     </div>
+    <!---->
+    <ul data-win-control="WinJS.UI.Repeater" data-win-options="{data: zion.batch.update_results}">
+      <li data-win-bind="textContent: result"></li>
+    </ul>
+     
   </section>
 </div>
 </body>
