@@ -1,5 +1,4 @@
 ﻿.toolbar {
-  height:100%;
 }
 .toolbar section {
 	margin: auto 0px;
@@ -22,15 +21,14 @@
 }
 
 .fragment {
-	-ms-grid-columns: 1fr;
-	-ms-grid-rows: 128px 1fr;
-	display: -ms-grid;
+  -ms-grid-columns: 1fr;
+  -ms-grid-rows: 128px 1fr;
+  display: -ms-grid;
 }
 
-	.fragment section[role=main] {
-		-ms-grid-row: 2;
-    height:100%;
-	}
+.fragment section[role=main] {
+  -ms-grid-row: 2;
+}
   /* Template for the items in the ListViews in this sample */
 .smallListIconTextItem {
   width: 100%;
@@ -56,20 +54,20 @@
   height:auto;
 }
 #zion-fields > .win-viewport.win-vertical {
-  overflow-y:hidden;
+  overflow-y: hidden;
 }
 
-.win-viewport{
-    -ms-overflow-style: scrollbar;
+.win-viewport {
+  -ms-overflow-style: scrollbar;
 }
-.zion-fields-item
-{
-    width: 242px;
-    overflow: hidden;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+.zion-fields-item {
+  width: 242px;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
+
 #zion-field-target {
   padding: 4px 8px;
 }

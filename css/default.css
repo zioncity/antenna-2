@@ -1,70 +1,73 @@
 ﻿body {
-font-family: "Segoe UI", Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
+  font-family: "Segoe UI", Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
+  
 }
 .content, #app {
-  height: 100%;
+
 }
+
 #app .win-splitviewpanetoggle {
-    float: left;
-  }
+  float: left;
+}
 
-  /* SplitView pane content style*/
-  #app .header {
-    white-space: nowrap;
-  }
-  #app .zion-header {
-    white-space:nowrap;
-    margin-top:8px;
-    margin-bottom:8px;
-  }
-  #app .title {
-    font-size: 25px;
-    left: 50px;
-    margin-top: 6px;
-    vertical-align: middle;
-    display: inline-block;
-  }
+/* SplitView pane content style*/
+#app .header {
+  white-space: nowrap;
+}
 
-  #app .nav-commands {
-    margin-top: 20px;
-  }
+#app .zion-header {
+  white-space: nowrap;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#app .title {
+  font-size: 25px;
+  left: 50px;
+  margin-top: 6px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#app .nav-commands {
+  margin-top: 20px;
+}
 
 .win-navbarcommand-button {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 #app .win-splitview-pane-hidden .win-navbarcommand-button {
-    width: 46px;
+  width: 46px;
 }
 
 #app .win-splitview-pane-hidden .win-navbarcommand-label {
-    /* Workaround: Make sure pane doesn't scroll if ContentDialog restores focus to
+  /* Workaround: Make sure pane doesn't scroll if ContentDialog restores focus to
        NavBarCommand's label
     */
-    visibility: hidden;
+  visibility: hidden;
 }
-
+#app .win-splitview{
+  height:auto;
+  overflow-y: auto;
+}
 /*SplitView content style*/
 #app .win-splitview-content {
-    background-color: rgb(252,252,252);
+  background-color: rgb(252,252,252);
+  height: auto;
 }
-
+#app .win-splitview .win-splitview-contentwrapper{
+  overflow-y:auto;
+}
 #app .contenttext {
-    margin: 20px;
-/*    margin-top: 6px;*/
-    height:100%;
-/*    overflow-y:scroll;*/
-}
-#content {
-	text-align: center;
-}
-
-.status {
-	margin-top: 12px;
+  margin: 20px;
+  /*    margin-top: 6px;
+    height:100%;*/
+  /*    overflow-y:scroll;*/
 }
 
 .win-viewport{
-  -ms-overflow-style: scrollbar;
+  /*-ms-overflow-style: scrollbar;*/
 }
 
 .zion-page-host {
@@ -78,21 +81,14 @@ font-family: "Segoe UI", Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅�
 .zion-display-none {
   display:none;
 }
-#statusMessage
-{
-    position: fixed;
-    width: 100%;
-    background-color: rgb(29, 29, 29);
-    margin-bottom:5px;
-    color: green;
-}
+
 div.zion-split-seperator {
   float: left;
   height: 32px;
   width: 48px;
 }
 .zion-page-rendered-control {
-  height: 100%;
+
 }
 .zion-fragment {
   -ms-grid-columns: 1fr;
@@ -102,5 +98,4 @@ div.zion-split-seperator {
 
 .zion-fragment .zion-section[role=main] {
   -ms-grid-row: 2;
-  height: 100%;
 }

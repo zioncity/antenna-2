@@ -19,17 +19,17 @@
 }
 
 .fragment {
-	-ms-grid-columns: 1fr;
-	-ms-grid-rows: 128px 1fr;
-	display: -ms-grid;
-	height: 100%;
-	width: 100%;
+  -ms-grid-columns: 1fr;
+  -ms-grid-rows: 128px 1fr;
+  display: -ms-grid;
+  height: 100%;
+  width: 100%;
 }
 
-	.fragment section[role=main] {
-		-ms-grid-row: 2;
-		height: 100%;
-	}
+.fragment section[role=main] {
+  -ms-grid-row: 2;
+  height: 100%;
+}
 #lower-equip-params li
 {
 	list-style: none;
@@ -49,12 +49,11 @@
 	text-align: right;
 }
 
-#lower-equip-params input[type="text"]
-{
-	width: 12em;
+#lower-equip-params input[type="text"] {
+  width: 12em;
 }
 
 .zion-stretch-box {
-    overflow: hidden; /* Creates a new block format context, which will make this tag fill the remaining width */
+  overflow: hidden; /* Creates a new block format context, which will make this tag fill the remaining width */
 }
 
