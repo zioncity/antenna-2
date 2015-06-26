@@ -16,9 +16,10 @@
       var dia = document.querySelector("#zion-antenna-settings-dialog");
       if (!dia) return;
       var cont = dia.querySelector("#zion-antenna-settings-dialog-content");
-      cont.innerHTML = "";      
+      //cont.innerHTML = "";      
+      WinJS.Utilities.empty(cont);
       WinJS.UI.Pages.render("/pages/antennasettings/pageantennasettings.html", cont).done(function () {
-        dia.show();
+        dia.winControl.show();
       });
 
     }),
@@ -43,6 +44,7 @@
     }),
     changePasswordCommand: WinJS.UI.eventHandler(function (ev) {
       var host = document.querySelector(".zion-page-rendered-control");
+      WinJS.Utilities.empty(host);
       WinJS.UI.Pages.render("/pages/ctrl/showequip.html", host).done(function () { });
     }),
 
@@ -55,6 +57,7 @@
         dia.show();
       });
       */
+      WinJS.Utilities.empty(host);
       var renderHost = document.querySelector(".zion-page-rendered-control");
       WinJS.UI.Pages.render("/pages/adddownstreamequip/addingdownstreamequip.html", renderHost).done(function () { });
     }),

@@ -8,7 +8,7 @@
     <script src="showequip.js"></script>
 </head>
 <body>
-  <div class="toolbar fragment">
+  <div class="toolbar zion-flex-host">
     <header class="page-header" aria-label="Header content" role="banner">
       <h1 class="titlearea win-type-ellipsis">
         <span class="pagetitle">监测子系统</span>
@@ -58,7 +58,10 @@
         </div>
 
         <div class="footer">
-          <p>滚动 AND 滚动...</p>
+          <div class="status">
+            <div>Loading more items </div>
+            <progress class="win-progress-bar progress zion-display-none"></progress>
+          </div>
         </div>
       </div>
 

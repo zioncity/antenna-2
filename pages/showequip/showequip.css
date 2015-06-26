@@ -5,7 +5,8 @@
 }
 
 .fragment section[role=main] {
-  -ms-grid-row: 2;
+  /*-ms-grid-row: 2;*/
+  height : calc(100% - 50px);
 }
 /* Template for the items in the ListViews in this sample */
 #sample {
