@@ -59,8 +59,6 @@
     <None Include="antenna-2_dev.pfx" />
     <Content Include="default.html" />
     <Content Include="fragments\appnav.html" />
-    <Content Include="fragments\batchadddsequip.html" />
-    <Content Include="fragments\page-toolbar.html" />
     <Content Include="images\logo.scale-100.png" />
     <Content Include="images\smalllogo.scale-100.png" />
     <Content Include="images\splashscreen.scale-100.png" />
@@ -76,25 +74,36 @@
     <Content Include="node_modules\winjs\License.txt" />
     <Content Include="node_modules\winjs\package.json" />
     <Content Include="node_modules\winjs\README.md" />
-    <Content Include="pages\adddownstreamequip\addingdownstreamequip.css" />
-    <Content Include="pages\adddownstreamequip\addingdownstreamequip.html" />
-    <Content Include="pages\adddownstreamequip\addingdownstreamequip.js" />
-    <Content Include="pages\antennasettings\pageantennasettings.css" />
-    <Content Include="pages\antennasettings\pageantennasettings.html" />
-    <Content Include="pages\antennasettings\pageantennasettings.js" />
-    <Content Include="pages\batchadddsequip\batchadddsequip.css" />
-    <Content Include="pages\batchadddsequip\batchadddsequip.html" />
-    <Content Include="pages\batchadddsequip\batchadddsequip.js" />
+    <Content Include="pages\addequip\addequip.css" />
+    <Content Include="pages\addequip\addequip.html" />
+    <Content Include="pages\addequip\addequip.js" />
+    <Content Include="pages\batchequip\batchequip.css" />
+    <Content Include="pages\batchequip\batchequip.html" />
+    <Content Include="pages\batchequip\batchequip.js" />
     <Content Include="pages\ctrl\showequip.css" />
     <Content Include="pages\ctrl\showequip.html" />
     <Content Include="pages\ctrl\showequip.js" />
-    <Content Include="pages\homepage\pagehome.css" />
-    <Content Include="pages\homepage\pagehome.html" />
-    <Content Include="pages\homepage\pagehome.js" />
+    <Content Include="pages\home\home.css" />
+    <Content Include="pages\home\home.html" />
+    <Content Include="pages\home\home.js" />
+    <Content Include="pages\settings\settings.css" />
+    <Content Include="pages\settings\settings.html" />
+    <Content Include="pages\settings\settings.js" />
     <Content Include="pages\showequip\showequip.css" />
     <Content Include="pages\showequip\showequip.html" />
     <Content Include="pages\showequip\showequip.js" />
     <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="pages\addunit\" />
+    <Folder Include="pages\batchunit\" />
+    <Folder Include="pages\showrole\" />
+    <Folder Include="pages\showjournal\" />
+    <Folder Include="pages\showstatis\" />
+    <Folder Include="pages\showunit\" />
+    <Folder Include="pages\report\" />
+    <Folder Include="pages\showalarm\" />
+    <Folder Include="pages\showantennaattitude\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <!-- To modify your build process, add your task inside one of the targets below then uncomment

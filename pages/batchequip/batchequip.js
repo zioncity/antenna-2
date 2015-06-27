@@ -1,10 +1,10 @@
-﻿(function(){
+﻿(function () {
   "use strict;"
   var _fields = [];  // {name : "province", index : 0, origin:"省份"}
   var _csv_text = null; //[]string, lines
 
   WinJS.Namespace.define("zion.batch", {
-    fields_desc: {desc :""},
+    fields_desc: { desc: "" },
     on_field_selected: WinJS.UI.eventHandler(function (e) {
       var btn = e.target;
       var parent = btn.parentNode;  //zion-fields-item
@@ -14,7 +14,7 @@
     }),
 
     fields: new WinJS.Binding.List(),
-    update_results : new WinJS.Binding.List(),
+    update_results: new WinJS.Binding.List(),
     upsert_worker: function (text) {
       return function () {
         zion.batch.update_results.push({ result: text });
@@ -55,7 +55,7 @@
     return false;
   }
 
-  WinJS.UI.Pages.define("/pages/batchadddsequip/batchadddsequip.html", {
+  WinJS.UI.Pages.define("/pages/batchequip/batchequip.html", {
     read_progress: null,
     read_text_file: function (evt) {
       if (!isSupportFileApi()) return;
@@ -79,7 +79,7 @@
         if (_csv_text && _csv_text.length > 0)
           fields = _csv_text[0].split(',');
         fields.forEach(function (field) {
-          zion.batch.fields.push({ name: field, target:"" });
+          zion.batch.fields.push({ name: field, target: "" });
         });
         read_progress.value = read_progress.max;
         WinJS.Utilities.addClass(read_progress, "zion-display-none");
@@ -87,22 +87,15 @@
 
       reader.readAsText(file);
     },
-    // This function is called whenever a user navigates to this page. It
-    // populates the page elements with the app's data.
     ready: function (element, options) {
-      read_progress = element.querySelector("#zion-progress");      
+      read_progress = element.querySelector("#zion-progress");
       document.getElementById('fileinput').addEventListener('change', this.read_text_file, false);
-      //zion-fields-map-result
     },
 
     unload: function () {
-      // TODO: Respond to navigations away from this page.
     },
 
     updateLayout: function (element) {
-      /// <param name="element" domElement="true" />
-
-      // TODO: Respond to changes in layout.
     }
   });
 })();

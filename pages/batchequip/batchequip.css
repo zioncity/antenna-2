@@ -1,21 +1,4 @@
 .batchadddsequip section {
-/*  margin:0 auto !important;
-  max-width: 1024px;*/
-}
-
-.phone .batchadddsequip .page-section {
-  margin: auto 24px;
-}
-.phone .batchadddsequip .page-header .titlearea {
-  -ms-grid-column: 1;
-  margin-top: 37px;
-  margin-left: 24px;
-  font-size: 28pt;
-  width: calc(100vw - 20px);
-}
-
-.phone .batchadddsequip .back-button {
-  display: none;
 }
 
 .fragment {
@@ -36,12 +19,15 @@
   display: -webkit-flex;
   display: flex;
 }
+
 #zion-field-target {
   padding: 4px 8px;
 }
+
 #zion-fields {
-  height:auto;
+  height: auto;
 }
+
 #zion-fields > .win-viewport.win-vertical {
-  overflow-y:hidden;
+  overflow-y: hidden;
 }

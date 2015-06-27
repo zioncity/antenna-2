@@ -14,7 +14,7 @@
         <span class="pagetitle">监测子系统</span>
       </h1>
     </header>
-    <section class="section" aria-label="Main content" role="main" id="sample">
+    <section class="section" aria-label="Main content" role="main" id="zion-show-equip">
       <!--   -->
       <div class="zion-equipment-listitem-template" data-win-control="WinJS.Binding.Template" style="display: none">
         <div class="zion-equipment-item">
@@ -37,13 +37,16 @@
               <li>市县 :	<span data-win-bind="textContent: city"></span></li>
             </ul>
           </div>
+          <!--
           <div id="zion-equip-actions-host">
             <ul>
               <li><a href="#">详情</a></li>
               <li><a href="#">告警</a></li>
               <li><a href="#">删除</a></li>
+
             </ul>
           </div>
+            -->
         </div>
       </div>
 
@@ -55,15 +58,18 @@
         </div>
 
         <div class="footer">
-          <p>滚动 AND 滚动...</p>
+          <div class="status">
+            <div>Loading more items </div>
+            <progress class="win-progress-bar progress zion-display-none"></progress>
+          </div>
         </div>
       </div>
 
       <!-- Call WinJS.UI.processAll() in your initialization code -->
-      <div class="listView win-selectionstylefilled"
+      <div class="listView win-selectionstylefilled" id="zion-stretch"
            data-win-control="WinJS.UI.ListView"
            data-win-options="{
-                    itemDataSource: zion.show.data.dataSource,
+                    itemDataSource: Sample.ListView.data.dataSource,
                     itemTemplate: select('.zion-equipment-listitem-template'),
                     header: select('.header'),
                     footer: select('.footer'),

@@ -1,29 +1,27 @@
-﻿.fragment {
+﻿/*.fragment {
   -ms-grid-columns: 1fr;
   -ms-grid-rows: 128px 1fr;
   display: -ms-grid;
+  height: 100%;
 }
 
 .fragment section[role=main] {
-  /*-ms-grid-row: 2;*/
-  height : calc(100% - 50px);
+  -ms-grid-row: 2;
 }
-/* Template for the items in the ListViews in this sample */
-#sample {
+ Template for the items in the ListViews in this sample */
+#zion-show-equip {
 }
 
-#sample .zion-equipment-item {
+#zion-show-equip .zion-equipment-item {
   width: 100%;
   padding: 5px;
   overflow: hidden;
 }
 
-#sample .zion-equipment-item .zion-equipment-item-detail {
+#zion-show-equip .zion-equipment-item .zion-equipment-item-detail {
   margin: 5px;
 }
 
-#zion-equip-actions-host {
-}
 
 #zion-equip-actions-host ul
 {
@@ -33,10 +31,11 @@
   font-size: smaller;
 }
 
-#zion-equip-actions-host li { display: inline; }
+#zion-equip-actions-host li {
+   display: inline; 
+}
 
-#zion-equip-actions-host ul li a
-{
+#zion-equip-actions-host ul li a {
   text-decoration: none;
   padding: .2em 1em;
 }
@@ -46,19 +45,19 @@
   background-color: #ddd;
 }
 
-#sample .zion-headfoot-host {
+#zion-show-equip .zion-headfoot-host {
   display: none;
 }
 
 /* CSS applied to the ListViews in this sample */
-#sample .listView
+#zion-show-equip .listView
 {
 }
 #sample .win-listview {
   height: auto;
 }
-#sample .listView .header,
-#sample .listView .footer {
+#zion-show-equip .listView .header,
+#zion-show-equip .listView .footer {
     padding: 10px;
     background-color: #d1d1d1;
 }
@@ -84,8 +83,27 @@
   padding: 4px 8px;
 }
 
+.zion-equipment-item-detail ul{
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.zion-equipment-item-detail li {
+  display: inline-block;
+  width: 160px;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow:hidden;
+  white-space: nowrap;
+}
+
 .zion-eid-header a{
   float: right;
   padding: 0 1em;
   font-size: small;
+}
+.listView {
+  height: calc(100vh - 128px);
 }

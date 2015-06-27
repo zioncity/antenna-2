@@ -1,29 +1,20 @@
-﻿.win-type-header,
-.win-type-subheader,
-.win-type-title,
-.win-type-subtitle,
+﻿.win-type-header, .win-type-subheader,
+.win-type-title, .win-type-subtitle,
 .win-type-base,
 .win-type-body,
 .win-type-caption,
-.win-h1,
-.win-h2,
-.win-h3,
-.win-h4,
-.win-h5,
-.win-h6,
+.win-h1, .win-h2, .win-h3, .win-h4, .win-h5, .win-h6,
 .win-button,
 .win-dropdown,
 .win-textbox,
 .win-link,
-.win-textarea {
+.win-textarea, body {
   font-family: "Segoe UI", Tahoma, Helvetica, Arial, "Microsoft Yahei Light", "Microsoft Yahei", sans-serif;
 }
-body {
-  font-family: "Segoe UI", Tahoma, Helvetica, Arial, "Microsoft Yahei Light", "Microsoft Yahei", sans-serif;
-}
+
 .content,
 #app {
-  height: 100%;
+  height:100%;
 }
 
 #app .win-splitviewpanetoggle {
@@ -56,9 +47,6 @@ body {
 }
 
 #app .win-splitview-pane-hidden .win-navbarcommand-label {
-  /* Workaround: Make sure pane doesn't scroll if ContentDialog restores focus to
-       NavBarCommand's label
-    */
   visibility: hidden;
 }
 #app .win-splitview{
@@ -67,10 +55,10 @@ body {
 /*SplitView content style*/
 #app .win-splitview-content {
   background-color: rgb(252,252,252);
-  height: auto;
+  /*height: auto;*/
 }
 #app .win-splitview .win-splitview-contentwrapper{
-  overflow-y:auto;
+  /*overflow-y:auto;*/
 }
 #app .contenttext {
   margin-left: 20px;
@@ -88,12 +76,14 @@ body {
   height: 32px;
   width: 48px;
 }
+/*
 .zion-fragment {
   -ms-grid-columns: 1fr;
   -ms-grid-rows: 40px 1fr;
   display: -ms-grid;
+  height:100%;
 }
 
 .zion-fragment .zion-section[role=main] {
   -ms-grid-row: 2;
-}
+}*/

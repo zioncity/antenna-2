@@ -2,22 +2,6 @@
 	margin: auto 0;
 }
 
-.phone .addinglowerequip .page-section {
-	margin: auto 24px;
-}
-
-.phone .addinglowerequip .page-header .titlearea {
-	-ms-grid-column: 1;
-	margin-top: 37px;
-	margin-left: 24px;
-	font-size: 28pt;
-	width: calc(100vw - 20px);
-}
-
-.phone .addinglowerequip .back-button {
-	display: none;
-}
-
 .fragment {
   -ms-grid-columns: 1fr;
   -ms-grid-rows: 128px 1fr;
@@ -38,7 +22,7 @@
 #lower-equip-params
 {
 	display: inline-block;
-  -webkit-padding-start: 0px;
+  -webkit-padding-start: 0;
 }
 
 #lower-equip-params label
@@ -53,7 +37,4 @@
   width: 12em;
 }
 
-.zion-stretch-box {
-  overflow: hidden; /* Creates a new block format context, which will make this tag fill the remaining width */
-}
 
