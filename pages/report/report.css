@@ -1,0 +1,17 @@
+﻿.report section {
+	margin: auto 0;
+}
+
+#zion-report .fragment {
+  -ms-grid-columns: 1fr;
+  -ms-grid-rows: 128px 1fr;
+  display: -ms-grid;
+  height: 100%;
+  width: 100%;
+}
+
+#zion-report .fragment section[role=main] {
+  -ms-grid-row: 2;
+  height: 100%;
+}
+
